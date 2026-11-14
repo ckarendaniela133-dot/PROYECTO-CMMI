@@ -430,4 +430,315 @@ h2 {
     color: #555b66;
 }
 
+/* FRANJA DE CONCEPTOS */
+.conceptos {
+    min-height: 116px;
+    background: #eff0f2;
+    display: flex;
+    align-items: center;
+}
 
+.conceptos-lista {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.conceptos-lista span {
+    color: #192644;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* SECCIÓN DE CALIDAD */
+.contacto {
+    min-height: 279px;
+    padding: 50px 0;
+    color: white;
+    background: #101a34;
+}
+
+.contacto-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+}
+
+.contacto h2 {
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+.contacto-texto p {
+    font-size: 11px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contacto-texto ul {
+    padding-left: 17px;
+    font-size: 10px;
+    line-height: 1.9;
+}
+
+.formulario h3 {
+    color: #00e9a6;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.campo {
+    margin-bottom: 13px;
+}
+
+.campo label {
+    display: block;
+    color: #00e9a6;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.campo p {
+    font-size: 10px;
+    line-height: 1.5;
+    color: #e1e6f0;
+}
+
+.boton-ancho {
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+/* PIE DE PÁGINA */
+footer {
+    min-height: 100px;
+    padding: 22px 0;
+    background: #192644;
+    color: white;
+}
+
+.pie-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.pie-contenido h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.pie-contenido p {
+    font-size: 10px;
+    color: #dce2ed;
+}
+
+.enlaces-pie {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.enlaces-pie a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.copyright {
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid #ffffff25;
+}
+
+@media screen and (max-width: 650px) {
+
+    .contenedor {
+        width: 90%;
+    }
+
+    /* ENCABEZADO */
+    .hero {
+        height: auto;
+        min-height: 390px;
+        padding-bottom: 45px;
+    }
+
+    .nav {
+        height: 75px;
+    }
+
+    .hero-contenido {
+        padding-top: 35px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+
+    /* CARACTERÍSTICAS */
+    .proteccion {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .proteccion h2 {
+        font-size: 22px;
+        margin-bottom: 35px;
+    }
+
+    .caracteristicas {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .caracteristica p {
+        max-width: 260px;
+        margin: auto;
+    }
+
+    .interior {
+        height: auto;
+    }
+
+    .interior-superior {
+        height: 340px;
+        display: block;
+    }
+
+    .texto-interior {
+        padding-top: 35px;
+    }
+
+    .texto-interior h2,
+    .texto-seguridad h2 {
+        font-size: 22px;
+    }
+
+    .texto-interior p,
+    .texto-seguridad p {
+        font-size: 11px;
+    }
+
+    .ilustracion-panel {
+        width: 190px;
+        height: 105px;
+        right: 8%;
+        top: 190px;
+    }
+
+    .interior-superior::after {
+        top: 230px;
+        height: 110px;
+    }
+
+    .interior-inferior {
+        height: auto;
+        padding: 35px 0;
+    }
+
+    .contenido-inferior {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .texto-seguridad {
+        width: 100%;
+    }
+
+    .niveles {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    .niveles h2 {
+        font-size: 22px;
+    }
+
+    .planes {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        gap: 15px;
+    }
+
+    .plan,
+    .destacado {
+        min-height: 230px;
+    }
+
+
+    /* CONCEPTOS */
+    .conceptos {
+        padding: 30px 0;
+    }
+
+    .conceptos-lista {
+        justify-content: center;
+        gap: 20px 25px;
+    }
+
+
+    /* CALIDAD */
+    .contacto {
+        padding: 40px 0;
+    }
+
+    .contacto-contenido {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+
+    /* PIE DE PÁGINA */
+    .pie-contenido {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .enlaces-pie {
+        gap: 12px;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .acceso {
+        font-size: 10px;
+    }
+
+    .proteccion h2,
+    .niveles h2 {
+        font-size: 20px;
+    }
+
+    .ilustracion-panel {
+        width: 165px;
+        right: 5%;
+    }
+
+    .numero {
+        font-size: 40px;
+    }
+
+}
